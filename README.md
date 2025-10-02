@@ -1,8 +1,6 @@
-# 🎈 Blank app template
+# 👩🏽‍🏫 DocentES 👨🏻‍🏫
 
-A simple Streamlit app template for you to modify!
-
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+Uma central de informações sobre os docentes do Espírito Santo, conforme dados das Sinopses Estatísticas do Censo Escolar da Educação Básica dos anos de 2022 a 2024.
 
 ### How to run it on your own machine
 
