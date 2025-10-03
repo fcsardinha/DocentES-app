@@ -1,0 +1,469 @@
+﻿Ano;Município;Código do Município;Sexo;Até 24 anos;De 25 a 29 anos;De 30 a 39 anos;De 40 a 49 anos;De 50 a 54 anos;De 55 a 59 anos;60 anos ou mais
+2022;Afonso Cláudio ;3200102;Feminino;9;24;99;131;28;18;1
+2022;Água Doce do Norte ;3200169;Feminino;2;12;29;49;15;5;1
+2022;Águia Branca ;3200136;Feminino;11;31;42;44;12;9;0
+2022;Alegre ;3200201;Feminino;13;29;79;114;60;25;15
+2022;Alfredo Chaves ;3200300;Feminino;5;13;42;58;23;13;6
+2022;Alto Rio Novo ;3200359;Feminino;1;5;29;31;6;4;1
+2022;Anchieta ;3200409;Feminino;3;12;95;251;65;34;25
+2022;Apiacá ;3200508;Feminino;1;1;19;28;10;9;10
+2022;Aracruz ;3200607;Feminino;12;58;255;392;123;61;27
+2022;Atílio Vivácqua ;3200706;Feminino;0;9;33;57;12;15;10
+2022;Baixo Guandu ;3200805;Feminino;6;15;58;139;39;25;9
+2022;Barra de São Francisco ;3200904;Feminino;9;49;151;153;43;19;4
+2022;Boa Esperança ;3201001;Feminino;3;17;62;79;28;2;7
+2022;Bom Jesus do Norte ;3201100;Feminino;3;3;22;32;14;15;5
+2022;Brejetuba ;3201159;Feminino;3;13;55;60;27;7;2
+2022;Cachoeiro de Itapemirim ;3201209;Feminino;35;147;547;693;171;145;75
+2022;Cariacica ;3201308;Feminino;49;288;939;1133;363;257;183
+2022;Castelo ;3201407;Feminino;3;18;108;173;51;26;19
+2022;Colatina ;3201506;Feminino;22;127;391;386;149;79;37
+2022;Conceição da Barra ;3201605;Feminino;13;28;111;121;38;18;5
+2022;Conceição do Castelo ;3201704;Feminino;1;6;54;55;17;11;2
+2022;Divino de São Lourenço ;3201803;Feminino;1;5;16;16;4;2;2
+2022;Domingos Martins ;3201902;Feminino;19;55;139;138;26;16;3
+2022;Dores do Rio Preto ;3202009;Feminino;0;3;28;29;9;2;3
+2022;Ecoporanga ;3202108;Feminino;5;27;78;96;31;10;6
+2022;Fundão ;3202207;Feminino;1;7;38;65;47;22;15
+2022;Governador Lindenberg ;3202256;Feminino;9;21;39;38;17;7;2
+2022;Guaçuí ;3202306;Feminino;9;33;75;133;34;27;15
+2022;Guarapari ;3202405;Feminino;12;56;265;485;148;105;48
+2022;Ibatiba ;3202454;Feminino;7;24;55;86;24;9;2
+2022;Ibiraçu ;3202504;Feminino;2;13;36;50;16;9;6
+2022;Ibitirama ;3202553;Feminino;6;22;35;54;8;10;2
+2022;Iconha ;3202603;Feminino;1;9;31;51;16;9;2
+2022;Irupi ;3202652;Feminino;2;9;50;52;9;10;2
+2022;Itaguaçu ;3202702;Feminino;10;14;71;66;16;10;3
+2022;Itapemirim ;3202801;Feminino;8;20;140;235;74;61;45
+2022;Itarana ;3202900;Feminino;3;4;39;41;16;8;3
+2022;Iúna ;3203007;Feminino;11;41;115;108;15;11;5
+2022;Jaguaré ;3203056;Feminino;11;30;119;128;41;16;2
+2022;Jerônimo Monteiro ;3203106;Feminino;0;5;37;47;15;8;3
+2022;João Neiva ;3203130;Feminino;1;17;59;74;14;10;4
+2022;Laranja da Terra ;3203163;Feminino;2;12;48;32;10;7;5
+2022;Linhares ;3203205;Feminino;28;176;560;691;211;91;48
+2022;Mantenópolis ;3203304;Feminino;6;12;41;44;14;5;2
+2022;Marataízes ;3203320;Feminino;4;27;213;249;85;48;22
+2022;Marechal Floriano ;3203346;Feminino;5;20;60;66;24;9;4
+2022;Marilândia ;3203353;Feminino;11;18;61;46;14;1;3
+2022;Mimoso do Sul ;3203403;Feminino;5;17;56;88;31;13;10
+2022;Montanha ;3203502;Feminino;1;17;76;113;34;16;7
+2022;Mucurici ;3203601;Feminino;1;8;28;31;11;5;2
+2022;Muniz Freire ;3203700;Feminino;6;29;63;67;32;13;2
+2022;Muqui ;3203809;Feminino;2;5;39;49;20;15;15
+2022;Nova Venécia ;3203908;Feminino;8;69;211;252;70;39;16
+2022;Pancas ;3204005;Feminino;5;18;52;62;34;9;5
+2022;Pedro Canário ;3204054;Feminino;3;13;72;95;34;19;6
+2022;Pinheiros ;3204104;Feminino;4;10;49;92;35;31;18
+2022;Piúma ;3204203;Feminino;1;7;74;126;31;24;10
+2022;Ponto Belo ;3204252;Feminino;0;1;23;34;10;5;4
+2022;Presidente Kennedy ;3204302;Feminino;0;18;81;127;27;21;13
+2022;Rio Bananal ;3204351;Feminino;6;41;91;82;28;7;2
+2022;Rio Novo do Sul ;3204401;Feminino;4;15;35;49;12;8;4
+2022;Santa Leopoldina ;3204500;Feminino;6;12;36;48;9;9;1
+2022;Santa Maria de Jetibá ;3204559;Feminino;13;64;187;164;29;10;4
+2022;Santa Teresa ;3204609;Feminino;10;33;87;69;30;8;4
+2022;São Domingos do Norte ;3204658;Feminino;11;25;43;33;8;0;1
+2022;São Gabriel da Palha ;3204708;Feminino;6;32;96;92;33;17;11
+2022;São José do Calçado ;3204807;Feminino;1;9;34;42;9;8;3
+2022;São Mateus ;3204906;Feminino;19;74;315;497;182;87;38
+2022;São Roque do Canaã ;3204955;Feminino;5;5;38;38;10;9;0
+2022;Serra ;3205002;Feminino;49;320;1216;1494;591;446;315
+2022;Sooretama ;3205010;Feminino;9;28;113;164;39;22;3
+2022;Vargem Alta ;3205036;Feminino;5;18;56;86;20;14;4
+2022;Venda Nova do Imigrante ;3205069;Feminino;10;37;109;96;22;10;7
+2022;Viana ;3205101;Feminino;6;57;211;287;129;62;44
+2022;Vila Pavão ;3205150;Feminino;1;11;22;48;21;6;0
+2022;Vila Valério ;3205176;Feminino;8;28;41;62;16;10;4
+2022;Vila Velha ;3205200;Feminino;55;268;1022;1385;520;340;270
+2022;Vitória ;3205309;Feminino;61;270;1001;1324;593;354;222
+2022;Afonso Cláudio ;3200102;Masculino;3;6;24;11;3;0;1
+2022;Água Doce do Norte ;3200169;Masculino;2;9;12;4;1;2;0
+2022;Águia Branca ;3200136;Masculino;2;9;16;3;2;0;2
+2022;Alegre ;3200201;Masculino;2;11;38;27;12;5;4
+2022;Alfredo Chaves ;3200300;Masculino;1;0;11;5;1;1;3
+2022;Alto Rio Novo ;3200359;Masculino;2;3;3;3;0;0;0
+2022;Anchieta ;3200409;Masculino;4;9;52;35;11;9;2
+2022;Apiacá ;3200508;Masculino;1;3;6;7;0;1;0
+2022;Aracruz ;3200607;Masculino;8;44;98;73;23;13;8
+2022;Atílio Vivácqua ;3200706;Masculino;4;2;13;9;2;2;1
+2022;Baixo Guandu ;3200805;Masculino;3;10;33;29;8;6;1
+2022;Barra de São Francisco ;3200904;Masculino;5;26;54;25;6;4;3
+2022;Boa Esperança ;3201001;Masculino;2;6;20;15;2;3;1
+2022;Bom Jesus do Norte ;3201100;Masculino;0;4;7;5;1;3;1
+2022;Brejetuba ;3201159;Masculino;2;6;14;11;0;1;1
+2022;Cachoeiro de Itapemirim ;3201209;Masculino;14;71;160;115;30;32;13
+2022;Cariacica ;3201308;Masculino;14;131;397;380;98;63;47
+2022;Castelo ;3201407;Masculino;0;6;26;21;9;9;1
+2022;Colatina ;3201506;Masculino;10;35;110;80;19;24;21
+2022;Conceição da Barra ;3201605;Masculino;4;13;35;19;4;2;2
+2022;Conceição do Castelo ;3201704;Masculino;1;6;13;9;1;1;1
+2022;Divino de São Lourenço ;3201803;Masculino;1;3;6;4;1;0;0
+2022;Domingos Martins ;3201902;Masculino;8;12;26;20;4;2;1
+2022;Dores do Rio Preto ;3202009;Masculino;0;3;9;9;0;3;0
+2022;Ecoporanga ;3202108;Masculino;3;3;20;23;4;1;0
+2022;Fundão ;3202207;Masculino;0;2;11;9;3;4;3
+2022;Governador Lindenberg ;3202256;Masculino;5;5;4;3;1;1;0
+2022;Guaçuí ;3202306;Masculino;3;10;21;12;7;3;1
+2022;Guarapari ;3202405;Masculino;4;19;103;106;32;31;15
+2022;Ibatiba ;3202454;Masculino;3;9;32;16;9;5;2
+2022;Ibiraçu ;3202504;Masculino;1;5;9;8;1;0;1
+2022;Ibitirama ;3202553;Masculino;1;8;8;11;3;0;0
+2022;Iconha ;3202603;Masculino;3;3;10;4;0;2;0
+2022;Irupi ;3202652;Masculino;0;4;6;7;0;3;0
+2022;Itaguaçu ;3202702;Masculino;4;1;12;5;1;2;0
+2022;Itapemirim ;3202801;Masculino;4;12;41;49;9;6;3
+2022;Itarana ;3202900;Masculino;0;3;5;6;0;1;0
+2022;Iúna ;3203007;Masculino;3;18;30;17;6;5;1
+2022;Jaguaré ;3203056;Masculino;2;11;21;20;6;4;0
+2022;Jerônimo Monteiro ;3203106;Masculino;0;4;9;4;1;2;1
+2022;João Neiva ;3203130;Masculino;1;3;20;5;2;2;2
+2022;Laranja da Terra ;3203163;Masculino;1;4;9;5;5;0;0
+2022;Linhares ;3203205;Masculino;13;42;141;116;30;21;10
+2022;Mantenópolis ;3203304;Masculino;0;3;11;11;0;0;0
+2022;Marataízes ;3203320;Masculino;5;7;68;44;11;4;1
+2022;Marechal Floriano ;3203346;Masculino;2;9;9;10;2;0;1
+2022;Marilândia ;3203353;Masculino;3;6;9;5;1;2;0
+2022;Mimoso do Sul ;3203403;Masculino;1;8;14;10;3;3;1
+2022;Montanha ;3203502;Masculino;2;7;25;26;3;0;4
+2022;Mucurici ;3203601;Masculino;0;3;4;4;0;1;1
+2022;Muniz Freire ;3203700;Masculino;5;14;16;6;5;4;2
+2022;Muqui ;3203809;Masculino;1;6;7;5;0;1;0
+2022;Nova Venécia ;3203908;Masculino;5;17;54;32;7;5;2
+2022;Pancas ;3204005;Masculino;1;6;7;8;3;2;0
+2022;Pedro Canário ;3204054;Masculino;0;7;20;13;4;3;4
+2022;Pinheiros ;3204104;Masculino;5;7;18;23;5;2;0
+2022;Piúma ;3204203;Masculino;2;5;34;14;5;9;2
+2022;Ponto Belo ;3204252;Masculino;0;1;6;6;4;1;0
+2022;Presidente Kennedy ;3204302;Masculino;0;5;24;11;2;1;0
+2022;Rio Bananal ;3204351;Masculino;2;10;9;9;3;1;1
+2022;Rio Novo do Sul ;3204401;Masculino;2;7;22;8;1;0;0
+2022;Santa Leopoldina ;3204500;Masculino;2;8;8;5;0;2;2
+2022;Santa Maria de Jetibá ;3204559;Masculino;3;11;48;32;2;4;0
+2022;Santa Teresa ;3204609;Masculino;3;18;36;21;8;11;5
+2022;São Domingos do Norte ;3204658;Masculino;1;5;12;3;2;0;0
+2022;São Gabriel da Palha ;3204708;Masculino;2;7;34;17;1;1;0
+2022;São José do Calçado ;3204807;Masculino;1;4;11;5;2;0;0
+2022;São Mateus ;3204906;Masculino;14;43;141;93;31;22;10
+2022;São Roque do Canaã ;3204955;Masculino;3;8;10;5;2;1;0
+2022;Serra ;3205002;Masculino;23;126;409;387;138;105;74
+2022;Sooretama ;3205010;Masculino;4;5;26;9;4;1;0
+2022;Vargem Alta ;3205036;Masculino;1;6;20;6;2;2;0
+2022;Venda Nova do Imigrante ;3205069;Masculino;3;17;27;29;11;0;4
+2022;Viana ;3205101;Masculino;1;31;89;78;19;9;10
+2022;Vila Pavão ;3205150;Masculino;2;2;11;6;0;0;0
+2022;Vila Valério ;3205176;Masculino;1;5;4;8;2;1;2
+2022;Vila Velha ;3205200;Masculino;29;127;397;407;132;107;75
+2022;Vitória ;3205309;Masculino;17;83;382;416;143;138;112
+2023;Afonso Cláudio ;3200102;Feminino;12;32;88;139;35;19;2
+2023;Água Doce do Norte ;3200169;Feminino;6;21;36;42;16;7;0
+2023;Águia Branca ;3200136;Feminino;8;28;43;44;16;8;0
+2023;Alegre ;3200201;Feminino;12;34;81;122;58;29;16
+2023;Alfredo Chaves ;3200300;Feminino;3;12;43;67;28;10;6
+2023;Alto Rio Novo ;3200359;Feminino;2;5;32;35;8;5;2
+2023;Anchieta ;3200409;Feminino;2;13;87;243;83;31;28
+2023;Apiacá ;3200508;Feminino;0;1;20;30;8;11;9
+2023;Aracruz ;3200607;Feminino;15;78;250;393;125;73;39
+2023;Atílio Vivácqua ;3200706;Feminino;1;8;33;64;9;13;12
+2023;Baixo Guandu ;3200805;Feminino;9;12;66;138;35;23;17
+2023;Barra de São Francisco ;3200904;Feminino;10;50;142;153;44;20;6
+2023;Boa Esperança ;3201001;Feminino;6;23;57;86;29;2;5
+2023;Bom Jesus do Norte ;3201100;Feminino;3;5;25;41;13;13;3
+2023;Brejetuba ;3201159;Feminino;3;18;52;51;31;6;2
+2023;Cachoeiro de Itapemirim ;3201209;Feminino;35;126;560;702;201;121;94
+2023;Cariacica ;3201308;Feminino;35;246;899;1177;403;282;206
+2023;Castelo ;3201407;Feminino;8;24;106;167;72;35;20
+2023;Colatina ;3201506;Feminino;13;115;367;372;147;101;46
+2023;Conceição da Barra ;3201605;Feminino;9;30;111;129;40;24;5
+2023;Conceição do Castelo ;3201704;Feminino;0;7;56;54;20;9;4
+2023;Divino de São Lourenço ;3201803;Feminino;1;8;18;12;6;3;1
+2023;Domingos Martins ;3201902;Feminino;20;61;145;137;29;14;0
+2023;Dores do Rio Preto ;3202009;Feminino;4;4;30;33;9;2;2
+2023;Ecoporanga ;3202108;Feminino;6;24;67;91;31;9;4
+2023;Fundão ;3202207;Feminino;2;5;43;87;34;29;13
+2023;Governador Lindenberg ;3202256;Feminino;8;28;46;36;17;11;1
+2023;Guaçuí ;3202306;Feminino;4;41;73;116;43;26;13
+2023;Guarapari ;3202405;Feminino;11;74;274;476;176;93;57
+2023;Ibatiba ;3202454;Feminino;6;31;57;95;24;13;1
+2023;Ibiraçu ;3202504;Feminino;6;10;31;56;23;11;4
+2023;Ibitirama ;3202553;Feminino;6;20;36;51;13;9;4
+2023;Iconha ;3202603;Feminino;0;5;30;47;14;12;3
+2023;Irupi ;3202652;Feminino;2;13;45;62;12;3;1
+2023;Itaguaçu ;3202702;Feminino;10;16;64;65;18;7;5
+2023;Itapemirim ;3202801;Feminino;5;18;110;231;82;62;53
+2023;Itarana ;3202900;Feminino;5;8;39;45;16;16;3
+2023;Iúna ;3203007;Feminino;15;41;114;104;24;10;6
+2023;Jaguaré ;3203056;Feminino;7;33;111;123;45;13;7
+2023;Jerônimo Monteiro ;3203106;Feminino;1;3;40;50;14;8;5
+2023;João Neiva ;3203130;Feminino;1;19;52;77;17;7;3
+2023;Laranja da Terra ;3203163;Feminino;2;12;46;36;6;12;5
+2023;Linhares ;3203205;Feminino;23;177;576;715;211;114;63
+2023;Mantenópolis ;3203304;Feminino;7;17;42;40;10;5;2
+2023;Marataízes ;3203320;Feminino;6;25;222;287;96;68;36
+2023;Marechal Floriano ;3203346;Feminino;4;21;62;62;17;10;4
+2023;Marilândia ;3203353;Feminino;4;19;60;47;13;1;4
+2023;Mimoso do Sul ;3203403;Feminino;7;26;63;81;33;12;9
+2023;Montanha ;3203502;Feminino;7;17;81;107;39;18;5
+2023;Mucurici ;3203601;Feminino;1;4;24;31;13;4;3
+2023;Muniz Freire ;3203700;Feminino;5;24;64;71;29;16;5
+2023;Muqui ;3203809;Feminino;3;5;43;47;21;15;19
+2023;Nova Venécia ;3203908;Feminino;6;68;212;261;84;45;9
+2023;Pancas ;3204005;Feminino;5;9;52;64;33;11;6
+2023;Pedro Canário ;3204054;Feminino;3;16;72;100;35;22;7
+2023;Pinheiros ;3204104;Feminino;3;13;47;90;44;31;21
+2023;Piúma ;3204203;Feminino;3;4;79;117;40;20;14
+2023;Ponto Belo ;3204252;Feminino;0;6;26;41;8;8;6
+2023;Presidente Kennedy ;3204302;Feminino;1;17;80;118;27;14;16
+2023;Rio Bananal ;3204351;Feminino;16;46;99;85;27;8;4
+2023;Rio Novo do Sul ;3204401;Feminino;5;14;37;46;20;4;2
+2023;Santa Leopoldina ;3204500;Feminino;5;11;37;41;13;6;1
+2023;Santa Maria de Jetibá ;3204559;Feminino;15;57;165;175;40;12;4
+2023;Santa Teresa ;3204609;Feminino;5;34;76;90;29;14;4
+2023;São Domingos do Norte ;3204658;Feminino;17;23;40;40;11;1;1
+2023;São Gabriel da Palha ;3204708;Feminino;7;36;112;107;31;16;17
+2023;São José do Calçado ;3204807;Feminino;2;11;37;43;7;8;1
+2023;São Mateus ;3204906;Feminino;24;94;351;515;198;109;38
+2023;São Roque do Canaã ;3204955;Feminino;9;9;34;38;11;5;3
+2023;Serra ;3205002;Feminino;114;403;1305;1616;601;371;239
+2023;Sooretama ;3205010;Feminino;9;31;105;163;37;31;3
+2023;Vargem Alta ;3205036;Feminino;6;16;59;88;18;14;5
+2023;Venda Nova do Imigrante ;3205069;Feminino;6;36;106;96;28;12;10
+2023;Viana ;3205101;Feminino;4;41;238;295;126;80;59
+2023;Vila Pavão ;3205150;Feminino;1;6;19;62;20;10;0
+2023;Vila Valério ;3205176;Feminino;15;30;43;63;15;8;6
+2023;Vila Velha ;3205200;Feminino;46;251;988;1389;549;348;296
+2023;Vitória ;3205309;Feminino;51;275;973;1344;602;385;232
+2023;Afonso Cláudio ;3200102;Masculino;4;7;24;10;4;1;1
+2023;Água Doce do Norte ;3200169;Masculino;2;6;8;7;1;2;0
+2023;Águia Branca ;3200136;Masculino;4;8;13;6;1;2;2
+2023;Alegre ;3200201;Masculino;7;13;46;25;15;5;3
+2023;Alfredo Chaves ;3200300;Masculino;3;5;12;6;1;2;2
+2023;Alto Rio Novo ;3200359;Masculino;0;2;3;3;0;0;0
+2023;Anchieta ;3200409;Masculino;3;11;46;39;13;8;5
+2023;Apiacá ;3200508;Masculino;1;1;7;7;1;1;0
+2023;Aracruz ;3200607;Masculino;7;40;102;90;26;12;13
+2023;Atílio Vivácqua ;3200706;Masculino;2;6;14;8;2;3;1
+2023;Baixo Guandu ;3200805;Masculino;1;12;27;33;9;6;1
+2023;Barra de São Francisco ;3200904;Masculino;1;30;52;35;10;6;3
+2023;Boa Esperança ;3201001;Masculino;1;7;17;21;2;2;3
+2023;Bom Jesus do Norte ;3201100;Masculino;1;1;6;5;3;2;1
+2023;Brejetuba ;3201159;Masculino;1;7;17;11;1;1;0
+2023;Cachoeiro de Itapemirim ;3201209;Masculino;19;65;173;125;39;28;18
+2023;Cariacica ;3201308;Masculino;20;118;387;381;120;73;53
+2023;Castelo ;3201407;Masculino;5;10;26;20;11;7;2
+2023;Colatina ;3201506;Masculino;13;30;121;91;22;27;20
+2023;Conceição da Barra ;3201605;Masculino;4;16;32;27;7;2;2
+2023;Conceição do Castelo ;3201704;Masculino;0;5;13;10;1;0;2
+2023;Divino de São Lourenço ;3201803;Masculino;1;2;5;7;0;0;0
+2023;Domingos Martins ;3201902;Masculino;4;15;25;28;5;2;1
+2023;Dores do Rio Preto ;3202009;Masculino;0;5;12;8;1;3;0
+2023;Ecoporanga ;3202108;Masculino;0;8;21;22;4;1;0
+2023;Fundão ;3202207;Masculino;2;1;10;10;5;5;1
+2023;Governador Lindenberg ;3202256;Masculino;2;4;3;4;1;0;0
+2023;Guaçuí ;3202306;Masculino;2;14;24;14;6;1;2
+2023;Guarapari ;3202405;Masculino;4;25;112;108;37;29;21
+2023;Ibatiba ;3202454;Masculino;2;12;31;20;7;3;4
+2023;Ibiraçu ;3202504;Masculino;2;3;14;9;3;0;1
+2023;Ibitirama ;3202553;Masculino;0;5;10;11;3;0;0
+2023;Iconha ;3202603;Masculino;4;5;9;3;1;1;0
+2023;Irupi ;3202652;Masculino;1;4;9;6;1;3;0
+2023;Itaguaçu ;3202702;Masculino;3;3;9;6;1;2;0
+2023;Itapemirim ;3202801;Masculino;3;20;46;48;10;4;3
+2023;Itarana ;3202900;Masculino;0;1;5;8;0;1;0
+2023;Iúna ;3203007;Masculino;5;14;28;22;6;3;1
+2023;Jaguaré ;3203056;Masculino;0;9;19;21;10;5;0
+2023;Jerônimo Monteiro ;3203106;Masculino;2;5;6;4;3;2;0
+2023;João Neiva ;3203130;Masculino;1;3;17;9;1;4;2
+2023;Laranja da Terra ;3203163;Masculino;2;2;12;3;5;1;0
+2023;Linhares ;3203205;Masculino;9;39;138;138;33;24;15
+2023;Mantenópolis ;3203304;Masculino;1;3;9;11;0;0;0
+2023;Marataízes ;3203320;Masculino;1;7;61;51;12;6;3
+2023;Marechal Floriano ;3203346;Masculino;2;11;11;16;2;1;1
+2023;Marilândia ;3203353;Masculino;3;8;11;6;2;1;0
+2023;Mimoso do Sul ;3203403;Masculino;3;10;11;10;5;2;2
+2023;Montanha ;3203502;Masculino;3;6;23;26;4;0;3
+2023;Mucurici ;3203601;Masculino;0;1;5;4;0;0;1
+2023;Muniz Freire ;3203700;Masculino;3;14;17;10;5;2;0
+2023;Muqui ;3203809;Masculino;1;7;8;9;0;0;0
+2023;Nova Venécia ;3203908;Masculino;2;20;59;30;6;6;3
+2023;Pancas ;3204005;Masculino;3;5;8;6;6;2;0
+2023;Pedro Canário ;3204054;Masculino;3;10;19;13;5;3;4
+2023;Pinheiros ;3204104;Masculino;4;12;18;23;5;3;0
+2023;Piúma ;3204203;Masculino;2;8;44;23;4;3;4
+2023;Ponto Belo ;3204252;Masculino;1;1;5;3;1;1;1
+2023;Presidente Kennedy ;3204302;Masculino;1;3;17;16;2;1;0
+2023;Rio Bananal ;3204351;Masculino;1;7;13;10;2;1;1
+2023;Rio Novo do Sul ;3204401;Masculino;5;6;20;8;2;0;1
+2023;Santa Leopoldina ;3204500;Masculino;1;5;9;4;0;0;3
+2023;Santa Maria de Jetibá ;3204559;Masculino;3;13;42;34;3;2;2
+2023;Santa Teresa ;3204609;Masculino;4;18;38;25;6;13;7
+2023;São Domingos do Norte ;3204658;Masculino;1;5;11;3;2;0;0
+2023;São Gabriel da Palha ;3204708;Masculino;5;7;34;14;3;1;0
+2023;São José do Calçado ;3204807;Masculino;2;7;11;6;2;2;0
+2023;São Mateus ;3204906;Masculino;24;59;158;98;40;22;14
+2023;São Roque do Canaã ;3204955;Masculino;2;6;9;5;1;2;0
+2023;Serra ;3205002;Masculino;35;164;441;391;139;100;83
+2023;Sooretama ;3205010;Masculino;0;10;22;16;3;3;1
+2023;Vargem Alta ;3205036;Masculino;3;6;20;11;2;3;0
+2023;Venda Nova do Imigrante ;3205069;Masculino;5;12;29;38;9;5;3
+2023;Viana ;3205101;Masculino;2;33;87;93;24;10;10
+2023;Vila Pavão ;3205150;Masculino;2;1;13;7;0;0;0
+2023;Vila Valério ;3205176;Masculino;0;6;8;6;3;1;1
+2023;Vila Velha ;3205200;Masculino;20;138;412;431;149;105;81
+2023;Vitória ;3205309;Masculino;13;113;378;424;171;124;116
+2024;Afonso Cláudio ;3200102;Feminino;9;28;90;141;32;20;2
+2024;Água Doce do Norte ;3200169;Feminino;4;18;35;43;17;6;2
+2024;Águia Branca ;3200136;Feminino;11;19;50;44;20;3;5
+2024;Alegre ;3200201;Feminino;13;42;88;121;50;29;19
+2024;Alfredo Chaves ;3200300;Feminino;1;13;46;62;21;13;7
+2024;Alto Rio Novo ;3200359;Feminino;0;2;33;30;8;4;0
+2024;Anchieta ;3200409;Feminino;7;13;97;242;95;31;31
+2024;Apiacá ;3200508;Feminino;0;2;19;34;8;11;10
+2024;Aracruz ;3200607;Feminino;17;75;283;448;143;68;31
+2024;Atílio Vivácqua ;3200706;Feminino;0;9;35;54;20;14;13
+2024;Baixo Guandu ;3200805;Feminino;6;12;61;137;47;31;12
+2024;Barra de São Francisco ;3200904;Feminino;12;50;137;151;52;20;4
+2024;Boa Esperança ;3201001;Feminino;2;21;47;83;30;8;6
+2024;Bom Jesus do Norte ;3201100;Feminino;0;4;20;33;12;14;4
+2024;Brejetuba ;3201159;Feminino;6;8;48;53;31;5;3
+2024;Cachoeiro de Itapemirim ;3201209;Feminino;47;181;539;699;193;116;99
+2024;Cariacica ;3201308;Feminino;35;232;838;1226;469;317;237
+2024;Castelo ;3201407;Feminino;8;23;104;155;67;33;22
+2024;Colatina ;3201506;Feminino;21;100;349;386;161;98;47
+2024;Conceição da Barra ;3201605;Feminino;19;36;102;128;46;24;5
+2024;Conceição do Castelo ;3201704;Feminino;2;10;47;52;22;11;4
+2024;Divino de São Lourenço ;3201803;Feminino;0;6;13;15;7;1;2
+2024;Domingos Martins ;3201902;Feminino;21;52;133;155;33;18;2
+2024;Dores do Rio Preto ;3202009;Feminino;5;14;25;32;14;4;2
+2024;Ecoporanga ;3202108;Feminino;7;18;62;92;34;10;6
+2024;Fundão ;3202207;Feminino;2;7;28;84;36;30;17
+2024;Governador Lindenberg ;3202256;Feminino;4;21;53;32;19;14;2
+2024;Guaçuí ;3202306;Feminino;12;45;79;103;56;28;17
+2024;Guarapari ;3202405;Feminino;11;69;283;493;181;103;66
+2024;Ibatiba ;3202454;Feminino;11;29;70;90;32;15;4
+2024;Ibiraçu ;3202504;Feminino;4;6;34;57;18;14;7
+2024;Ibitirama ;3202553;Feminino;8;20;34;51;14;2;6
+2024;Iconha ;3202603;Feminino;1;6;32;47;14;12;3
+2024;Irupi ;3202652;Feminino;1;14;45;66;12;4;2
+2024;Itaguaçu ;3202702;Feminino;11;17;61;67;14;7;7
+2024;Itapemirim ;3202801;Feminino;3;9;86;199;78;62;53
+2024;Itarana ;3202900;Feminino;0;8;41;55;22;19;5
+2024;Iúna ;3203007;Feminino;12;35;98;106;22;8;8
+2024;Jaguaré ;3203056;Feminino;6;33;114;121;58;17;6
+2024;Jerônimo Monteiro ;3203106;Feminino;0;3;43;47;14;7;3
+2024;João Neiva ;3203130;Feminino;6;11;47;70;21;14;4
+2024;Laranja da Terra ;3203163;Feminino;7;8;49;31;8;11;1
+2024;Linhares ;3203205;Feminino;19;153;564;773;240;137;72
+2024;Mantenópolis ;3203304;Feminino;7;15;51;38;8;9;2
+2024;Marataízes ;3203320;Feminino;3;31;248;299;102;75;46
+2024;Marechal Floriano ;3203346;Feminino;7;16;64;69;15;9;6
+2024;Marilândia ;3203353;Feminino;2;20;61;51;14;4;3
+2024;Mimoso do Sul ;3203403;Feminino;9;23;60;74;39;15;8
+2024;Montanha ;3203502;Feminino;2;23;90;106;44;20;7
+2024;Mucurici ;3203601;Feminino;0;5;22;34;10;8;2
+2024;Muniz Freire ;3203700;Feminino;5;31;79;72;24;14;3
+2024;Muqui ;3203809;Feminino;2;5;38;46;24;18;16
+2024;Nova Venécia ;3203908;Feminino;9;53;211;257;97;59;16
+2024;Pancas ;3204005;Feminino;1;13;51;69;32;16;7
+2024;Pedro Canário ;3204054;Feminino;2;14;67;94;43;17;7
+2024;Pinheiros ;3204104;Feminino;4;14;47;88;45;35;26
+2024;Piúma ;3204203;Feminino;3;6;74;137;38;30;15
+2024;Ponto Belo ;3204252;Feminino;3;7;19;44;11;9;6
+2024;Presidente Kennedy ;3204302;Feminino;1;16;89;131;30;21;18
+2024;Rio Bananal ;3204351;Feminino;8;50;111;91;26;11;3
+2024;Rio Novo do Sul ;3204401;Feminino;5;13;31;46;17;8;3
+2024;Santa Leopoldina ;3204500;Feminino;4;8;34;49;13;5;2
+2024;Santa Maria de Jetibá ;3204559;Feminino;13;45;164;178;36;16;8
+2024;Santa Teresa ;3204609;Feminino;7;30;67;97;29;16;4
+2024;São Domingos do Norte ;3204658;Feminino;16;18;37;28;13;3;1
+2024;São Gabriel da Palha ;3204708;Feminino;9;35;115;109;31;21;17
+2024;São José do Calçado ;3204807;Feminino;0;13;27;42;11;9;2
+2024;São Mateus ;3204906;Feminino;31;99;352;468;210;103;51
+2024;São Roque do Canaã ;3204955;Feminino;6;13;40;34;13;10;2
+2024;Serra ;3205002;Feminino;93;406;1301;1604;627;397;267
+2024;Sooretama ;3205010;Feminino;9;37;103;160;31;33;5
+2024;Vargem Alta ;3205036;Feminino;5;23;64;84;16;12;8
+2024;Venda Nova do Imigrante ;3205069;Feminino;4;38;108;108;25;11;10
+2024;Viana ;3205101;Feminino;3;28;212;294;130;98;57
+2024;Vila Pavão ;3205150;Feminino;1;9;25;50;19;14;0
+2024;Vila Valério ;3205176;Feminino;10;33;59;58;15;7;6
+2024;Vila Velha ;3205200;Feminino;36;249;949;1356;585;357;314
+2024;Vitória ;3205309;Feminino;47;268;994;1388;618;394;276
+2024;Afonso Cláudio ;3200102;Masculino;4;7;19;14;3;0;1
+2024;Água Doce do Norte ;3200169;Masculino;3;12;8;4;1;2;0
+2024;Águia Branca ;3200136;Masculino;2;7;17;5;0;4;0
+2024;Alegre ;3200201;Masculino;4;14;35;34;12;8;5
+2024;Alfredo Chaves ;3200300;Masculino;3;5;9;8;0;1;4
+2024;Alto Rio Novo ;3200359;Masculino;0;2;4;2;0;0;0
+2024;Anchieta ;3200409;Masculino;4;17;47;42;10;11;5
+2024;Apiacá ;3200508;Masculino;0;1;6;8;1;1;0
+2024;Aracruz ;3200607;Masculino;7;41;121;95;21;18;17
+2024;Atílio Vivácqua ;3200706;Masculino;2;5;10;9;2;1;1
+2024;Baixo Guandu ;3200805;Masculino;5;13;31;41;11;13;1
+2024;Barra de São Francisco ;3200904;Masculino;1;20;49;40;11;3;5
+2024;Boa Esperança ;3201001;Masculino;2;7;21;21;2;2;3
+2024;Bom Jesus do Norte ;3201100;Masculino;0;4;8;3;4;0;3
+2024;Brejetuba ;3201159;Masculino;2;8;14;11;1;1;0
+2024;Cachoeiro de Itapemirim ;3201209;Masculino;14;67;173;125;32;32;18
+2024;Cariacica ;3201308;Masculino;16;106;328;401;113;68;65
+2024;Castelo ;3201407;Masculino;2;14;24;23;9;8;2
+2024;Colatina ;3201506;Masculino;12;29;113;92;23;20;25
+2024;Conceição da Barra ;3201605;Masculino;6;11;33;23;5;4;2
+2024;Conceição do Castelo ;3201704;Masculino;2;4;11;12;0;0;1
+2024;Divino de São Lourenço ;3201803;Masculino;1;1;8;4;0;0;0
+2024;Domingos Martins ;3201902;Masculino;3;10;27;24;7;1;1
+2024;Dores do Rio Preto ;3202009;Masculino;0;7;12;5;3;1;0
+2024;Ecoporanga ;3202108;Masculino;0;6;17;16;5;0;0
+2024;Fundão ;3202207;Masculino;2;2;9;10;2;5;1
+2024;Governador Lindenberg ;3202256;Masculino;2;5;5;5;1;0;0
+2024;Guaçuí ;3202306;Masculino;3;12;29;19;3;3;3
+2024;Guarapari ;3202405;Masculino;2;33;116;106;35;24;19
+2024;Ibatiba ;3202454;Masculino;4;9;33;21;8;3;2
+2024;Ibiraçu ;3202504;Masculino;2;4;15;8;4;0;0
+2024;Ibitirama ;3202553;Masculino;0;4;9;10;2;1;0
+2024;Iconha ;3202603;Masculino;2;4;10;5;1;1;0
+2024;Irupi ;3202652;Masculino;0;4;9;5;1;3;0
+2024;Itaguaçu ;3202702;Masculino;2;3;9;3;1;1;0
+2024;Itapemirim ;3202801;Masculino;2;15;48;44;9;3;3
+2024;Itarana ;3202900;Masculino;0;1;5;8;1;1;0
+2024;Iúna ;3203007;Masculino;3;10;33;23;6;4;1
+2024;Jaguaré ;3203056;Masculino;4;10;19;19;10;5;1
+2024;Jerônimo Monteiro ;3203106;Masculino;1;4;8;5;1;3;1
+2024;João Neiva ;3203130;Masculino;1;5;17;10;1;1;3
+2024;Laranja da Terra ;3203163;Masculino;3;2;13;4;5;0;0
+2024;Linhares ;3203205;Masculino;5;39;149;119;40;18;14
+2024;Mantenópolis ;3203304;Masculino;2;4;8;13;0;0;0
+2024;Marataízes ;3203320;Masculino;1;12;55;57;12;8;3
+2024;Marechal Floriano ;3203346;Masculino;3;8;11;13;2;1;0
+2024;Marilândia ;3203353;Masculino;2;8;9;6;2;0;0
+2024;Mimoso do Sul ;3203403;Masculino;2;7;15;10;5;2;2
+2024;Montanha ;3203502;Masculino;1;8;25;27;7;3;3
+2024;Mucurici ;3203601;Masculino;1;1;7;5;0;0;0
+2024;Muniz Freire ;3203700;Masculino;2;14;15;7;4;2;2
+2024;Muqui ;3203809;Masculino;1;5;11;10;0;1;0
+2024;Nova Venécia ;3203908;Masculino;4;9;57;34;9;7;5
+2024;Pancas ;3204005;Masculino;3;5;10;7;6;2;0
+2024;Pedro Canário ;3204054;Masculino;3;7;17;15;7;5;6
+2024;Pinheiros ;3204104;Masculino;2;12;18;21;9;6;0
+2024;Piúma ;3204203;Masculino;0;8;38;29;0;5;3
+2024;Ponto Belo ;3204252;Masculino;0;2;4;6;2;2;1
+2024;Presidente Kennedy ;3204302;Masculino;1;4;16;18;4;1;0
+2024;Rio Bananal ;3204351;Masculino;0;6;8;5;2;1;1
+2024;Rio Novo do Sul ;3204401;Masculino;3;6;23;9;3;1;1
+2024;Santa Leopoldina ;3204500;Masculino;2;5;10;4;1;0;2
+2024;Santa Maria de Jetibá ;3204559;Masculino;2;15;45;41;4;0;1
+2024;Santa Teresa ;3204609;Masculino;3;13;40;28;3;8;10
+2024;São Domingos do Norte ;3204658;Masculino;3;7;10;5;0;0;0
+2024;São Gabriel da Palha ;3204708;Masculino;3;10;42;20;5;1;0
+2024;São José do Calçado ;3204807;Masculino;1;7;8;9;3;1;2
+2024;São Mateus ;3204906;Masculino;20;60;156;98;39;20;13
+2024;São Roque do Canaã ;3204955;Masculino;2;4;12;4;0;2;0
+2024;Serra ;3205002;Masculino;28;176;451;395;130;93;81
+2024;Sooretama ;3205010;Masculino;1;7;24;15;2;1;0
+2024;Vargem Alta ;3205036;Masculino;4;7;18;11;2;4;0
+2024;Venda Nova do Imigrante ;3205069;Masculino;3;12;28;38;8;9;2
+2024;Viana ;3205101;Masculino;2;22;78;95;21;14;10
+2024;Vila Pavão ;3205150;Masculino;0;6;9;7;1;0;0
+2024;Vila Valério ;3205176;Masculino;1;6;4;5;1;2;2
+2024;Vila Velha ;3205200;Masculino;22;128;400;437;148;99;100
+2024;Vitória ;3205309;Masculino;16;110;371;444;169;123;134
