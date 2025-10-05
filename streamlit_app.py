@@ -29,12 +29,9 @@ def carregar_todos_os_dados():
     for nome, caminho in nomes_arquivos.items():
         # Carrega cada dataframe usando ';' como separador
         df = pd.read_csv(caminho, delimiter=';')
+        df.columns = df.columns.str.strip()
         dataframes[nome] = df
-        
-    # Limpeza específica: remove a coluna vazia do arquivo de vínculo
-    #if 'Unnamed: 7' in dataframes['vinculo'].columns:
-    #    dataframes['vinculo'] = dataframes['vinculo'].drop(columns=['Unnamed: 7'])
-        
+            
     return dataframes
 
 # Carrega todos os dataframes
@@ -79,7 +76,7 @@ st.header(f"Exibindo dados para: {municipio_selecionado} ({ano_selecionado})")
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📊 Etapas de Ensino",
     "📊 Faixa Etária e Sexo",
-    "📊 Nível de Formação",
+    "📊 Formação Acadêmica",
     "📊 Vínculo Funcional",
     "📊 Dependência e Localização"
 ])
@@ -133,10 +130,15 @@ with tab3:
         (dfs['formacao']['Ano'] == ano_selecionado) &
         (dfs['formacao']['Município'] == municipio_selecionado)
     ]
-    # IMPLEMENTAÇÃO: Crie o gráfico para esta aba, similar ao da Aba 1
-    st.info("Gráfico de Formação a ser implementado.")
+        
+    # Prepara os dados para o gráfico (transforma colunas em linhas)
+    colunas_formacao = ['Ensino Fundamental', 'Ensino Médio', 'Graduação - Licenciatura', 'Graduação - Sem Licenciatura', 'Especialização', 'Mestrado', 'Doutorado']
+    dados_grafico = df_filtrado[colunas_formacao].melt(var_name='Formação', value_name='Nº de Docentes')
+    
+    # Cria e exibe o gráfico
+    fig = px.bar(dados_grafico, x='Nº de Docentes', y='Formação', text_auto=True, title="Total de Docentes por Formação Acadêmica", orientation='h')
+    st.plotly_chart(fig, use_container_width=True)
     st.dataframe(df_filtrado)
-
 
 # --- ABA 4: VÍNCULO FUNCIONAL ---
 with tab4:
