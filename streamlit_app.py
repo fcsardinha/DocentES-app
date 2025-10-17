@@ -1,3 +1,4 @@
+# Importando as bibliotecas necessárias
 import streamlit as st
 import unicodedata
 import pandas as pd
@@ -60,7 +61,7 @@ def normalizar_para_ordenacao(texto):
 st.sidebar.header("⚙️ Filtros")
 st.sidebar.markdown("Use os filtros abaixo para selecionar o ano e o município desejados.")
 
-# Filtro de Ano
+# --- Filtro de Ano ---
 ano_selecionado = st.sidebar.selectbox(
     "Selecione o Ano",
     options=sorted(
@@ -69,24 +70,46 @@ ano_selecionado = st.sidebar.selectbox(
                   )
 )
 
-# Filtro de Município
+# --- Filtro de Município ---
+# Criando a opção geral
+opcao_geral = ["Todos os Municípios"]
+# Criando uma lista ordenada dos municípios
 lista_municipios = sorted(
     dfs['etapas']['Município'].unique(),
     key=normalizar_para_ordenacao # Usando a função de normalização
     )
+# Juntando as duas listas!
+opcoes_municipios = opcao_geral + lista_municipios
+
+# Usamos a nova lista completa como opções do selectbox
 municipio_selecionado = st.sidebar.selectbox(
     "Selecione o Município",
-    options=lista_municipios
+    options=opcoes_municipios
 )
 
 # --- CORPO PRINCIPAL DO APP ---
 
-# --- TÍTULO E INTRODUÇÃO ---
+# Título da aplicação
 st.title("👩🏽‍🏫 DocentES 👨🏻‍🏫")
+# Descrição da aplicação
 st.markdown(
     "Bem-vindo à DocentES, a plataforma sobre os Docentes do Espírito Santo!"
 )
-st.image("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWSVR_PA-xWPXwdQ5qyRDWAZZdVA1JhdQuaT6yI926pYTAg0boScUh3J-lsiu1i3KDyHJQmN_OgNx6HX4Zun6XDIRfqNXJe8CdyKcnwDymZp8P52JvRrKav0otT263CjHKyS_RitA5VPJFOg6NJ-uqRwuksj2r_J1mna9CnfEVq4psg-QMaH4bq2Uy2w/w485-h335/fc-removebg-preview.png", width=400)
+
+# Exibir uma explicação sobre a aplicação com uma imagem ilustrativa
+with st.expander("Sobre o que é esta aplicação?"):
+    # Cria as colunas dentro do expander
+    col1, col2 = st.columns([1,2])
+
+    # Adiciona conteúdo à primeira coluna
+    with col1:
+        st.image("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWSVR_PA-xWPXwdQ5qyRDWAZZdVA1JhdQuaT6yI926pYTAg0boScUh3J-lsiu1i3KDyHJQmN_OgNx6HX4Zun6XDIRfqNXJe8CdyKcnwDymZp8P52JvRrKav0otT263CjHKyS_RitA5VPJFOg6NJ-uqRwuksj2r_J1mna9CnfEVq4psg-QMaH4bq2Uy2w/w485-h335/fc-removebg-preview.png", width=400)
+
+    # Adiciona conteúdo à segunda coluna
+    with col2:
+        st.header("Coluna 2")
+        st.write("Este é o conteúdo da segunda coluna.")
+
 st.markdown("Análise interativa dos dados de docentes do Espírito Santo, com base nas Sinopses Estatísticas do Censo Escolar da Educação Básica.")
 st.write("Aqui você pode explorar dados sobre os professores do estado, incluindo informações demográficas, formação acadêmica, e muito mais.")
 
@@ -126,7 +149,6 @@ with tab1:
     # Mensagem explicativa sobre os dados
     st.info("O mesmo docente pode ser contabilizado mais de uma vez, por atuar em diferentes etapas de ensino.")
 
-
 # --- ABA 2: FAIXA ETÁRIA E SEXO ---
 with tab2:
     st.markdown("#### Docentes por Faixa Etária e Sexo")
@@ -146,7 +168,6 @@ with tab2:
     st.plotly_chart(fig, use_container_width=True)
     st.dataframe(df_filtrado)
 
-
 # --- ABA 3: NÍVEL DE FORMAÇÃO ---
 with tab3:
     st.markdown("#### Docentes por Escolaridade ou Nível de Formação Acadêmica")
@@ -155,7 +176,7 @@ with tab3:
         (dfs['formacao']['Ano'] == ano_selecionado) &
         (dfs['formacao']['Município'] == municipio_selecionado)
     ]
-        
+    
     # Prepara os dados para o gráfico (transforma colunas em linhas)
     colunas_formacao = ['Ensino Fundamental', 'Ensino Médio', 'Graduação - Licenciatura', 'Graduação - Sem Licenciatura', 'Especialização', 'Mestrado', 'Doutorado']
     dados_grafico = df_filtrado[colunas_formacao].melt(var_name='Escolaridade / Formação Acadêmica', value_name='Quant. de Docentes')
@@ -192,24 +213,24 @@ with tab4:
         y='Vínculo Funcional',
         color='Dependência Administrativa',  # Atribui cores diferentes para cada dependência
         facet_col='Dependência Administrativa', # CRIA OS SUBPLOTS (um para cada dependência)
-        facet_col_spacing=0.04, # Espaçamento entre os subplots
-        facet_col_wrap=1, # Limita o número de colunas (subplots) a 1 por linha
         labels={'Quant. de Docentes': 'Quant. de Docentes', 'Vínculo Funcional': 'Tipo de Vínculo'},
         title=f"Quantidade de docentes por vínculo funcional para o município de {municipio_selecionado}",
         text_auto=True,
         orientation='h'
     )
     
-    # Removendo os títulos repetidos dos eixos x e y
+    # --- Melhora a aparência da aba ---
+    # Remove os títulos dos eixos X e Y de cada subplot individualmente
     fig.update_xaxes(title_text="")
     fig.update_yaxes(title_text="")
-
-    # Removendo os títulos (anotações) de cada subplot (ex: "Dependência Administrativa=Federal")
+    
+    # Remove os títulos (anotações) de cada subplot (ex: "Dependência Administrativa=Federal")
     fig.for_each_annotation(lambda a: a.update(text=""))
     
-    # Adicionando um título centralizado para o eixo X
+    # Adiciona um título centralizado para o eixo X e define o espaçamento
     fig.update_layout(
         xaxis_title="Quantidade de Docentes",  # Título centralizado para o eixo X
+        horizontal_spacing=0.05          # Adiciona um espaço de 5% da largura total entre os gráficos
     )
 
     st.plotly_chart(fig, use_container_width=True)
@@ -222,28 +243,15 @@ with tab4:
 
 # --- ABA 5: DEPENDÊNCIA E LOCALIZAÇÃO ---
 with tab5:
-    st.markdown("#### Docentes por Dependência Administrativa e Localização")
-    
+    st.subheader("Docentes por Dependência Administrativa e Localização")
     # Filtra o dataframe específico desta aba
     df_filtrado = dfs['dependencia'][
         (dfs['dependencia']['Ano'] == ano_selecionado) &
         (dfs['dependencia']['Município'] == municipio_selecionado)
     ]
-
-    # Prepara os dados para o gráfico
-    colunas_dependencia = ['Federal', 'Estadual', 'Municipal']
-    dados_grafico = df_filtrado.melt(id_vars=['Localização'], value_vars=colunas_dependencia, var_name='Dependência Administrativa', value_name='Quant. de Docentes')
-    
-    # Cria o gráfico de barras agrupado por sexo
-    fig = px.bar(dados_grafico, x='Dependência Administrativa', y='Quant. de Docentes', color='Localização', barmode='group', text_auto=True, title="Quantidade de docentes por localização e dependência administrativa, segundo o município")
-    st.plotly_chart(fig, use_container_width=True)    
-
+    # IMPLEMENTAÇÃO: Gráfico de barras agrupado por Localização (Urbana/Rural)
+    st.info("Gráfico de Dependência e Localização a ser implementado.")
     st.dataframe(df_filtrado)
     
     # Mensagem explicativa sobre os dados
     st.info("O mesmo docente pode ser contabilizado mais de uma vez, por atuar em mais de uma localização e/ou dependência administrativa.")
-
-# --- RODAPÉ ---
-st.markdown("---")
-st.write("© 2025 DocentES. Todos os direitos reservados.")
-st.markdown("Desenvolvido por Farley C. Sardinha | Dados do Censo Escolar de 2022 a 2024: [INEP](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica)")
