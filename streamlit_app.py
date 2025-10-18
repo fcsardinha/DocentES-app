@@ -144,9 +144,9 @@ with tab1:
     if municipio_selecionado == "Todos os Municípios":
         # SE o usuário escolher ver o estado todo:
         # 1. Filtrar o DataFrame apenas pelo ano
-        df_filtrado_ano = df_etapas[df_etapas['Ano'] == ano_selecionado]
+        df_filtrado = df_etapas[df_etapas['Ano'] == ano_selecionado]
         # 2. Somar os valores de todos os municípios, resultando em uma série
-        dados_base = df_filtrado_ano[colunas_etapas].sum()
+        dados_base = df_filtrado[colunas_etapas].sum()
         # 3. Transformar a série em um DataFrame longo
         dados_grafico = dados_base.reset_index()
         dados_grafico.columns = ['Etapa de Ensino', 'Quant. de Docentes']
@@ -185,7 +185,7 @@ with tab1:
         
     # Exibindo o dataframe filtrado correspondente
     with c1.expander("Ver tabela de dados"):
-        st.dataframe(df_filtrado_ano)    
+        st.dataframe(df_filtrado)    
 
     # --- Container 2: Gráfico de Linhas (a evolução temporal) ---
     st.markdown("---") # Linha divisória
@@ -258,7 +258,7 @@ with tab2:
         ]
 
     # Transformação com .melt()
-    dados_para_plotar = dados_base.melt(
+    dados_grafico = dados_base.melt(
         id_vars=['Sexo'], 
         value_vars=colunas_idade, 
         var_name='Faixa Etária', 
@@ -267,12 +267,12 @@ with tab2:
 
     # Ordenação correta das categorias
     ordem_faixa_etaria = ['Até 24 anos', 'De 25 a 29 anos', 'De 30 a 39 anos', 'De 40 a 49 anos', 'De 50 a 54 anos', 'De 55 a 59 anos', '60 anos ou mais']
-    dados_para_plotar['Faixa Etária'] = pd.Categorical(dados_para_plotar['Faixa Etária'], categories=ordem_faixa_etaria, ordered=True)
+    dados_grafico['Faixa Etária'] = pd.Categorical(dados_grafico['Faixa Etária'], categories=ordem_faixa_etaria, ordered=True)
 
     # Gerando o gráfico
-    if not dados_para_plotar.empty:
+    if not dados_grafico.empty:
         fig = px.bar(
-            dados_para_plotar,
+            dados_grafico,
             x='Faixa Etária',
             y='Quant. de Docentes',
             color='Sexo',
@@ -288,6 +288,49 @@ with tab2:
 
     with c2.expander("Ver tabela de dados"):
         st.dataframe(dados_base)
+
+    # --- Container 2: Gráfico de Linhas (Evolução Temporal) ---
+    st.markdown("---")
+    c2t = st.container(border=True)
+    c2t.markdown("##### Análise Comparativa da Evolução Temporal (Feminino vs. Masculino), por Faixa Etária")
+
+    colunas_idade = ['Até 24 anos', 'De 25 a 29 anos', 'De 30 a 39 anos', 'De 40 a 49 anos', 'De 50 a 54 anos', 'De 55 a 59 anos', '60 anos ou mais']
+
+    # Preparamos os dados base
+    if municipio_selecionado == "Todos os Municípios":
+        dados_base = df_idade
+    else:
+        dados_base = df_idade[df_idade['Município'] == municipio_selecionado]
+
+    # Adicionamos o filtro para a Faixa Etária
+    col_filtro, col_vazia = c2t.columns([2, 3])
+    with col_filtro:
+        idade_selecionada = st.selectbox(
+            "Selecione a Faixa Etária para Análise:",
+            options=colunas_idade,
+            key="filtro_idade_linha_final"
+        )
+
+    # Agrupamos por Ano E Sexo, selecionando e somando a coluna da idade escolhida
+    dados_agrupados = dados_base.groupby(['Ano', 'Sexo'])[idade_selecionada].sum()
+
+    # O .unstack() transforma 'Feminino' e 'Masculino' em colunas
+    dados_para_plotar = dados_agrupados.unstack()
+
+    # Gerando o Gráfico
+    if not dados_para_plotar.empty:
+        fig_linha = px.line(
+            dados_para_plotar,
+            markers=True,
+            labels={'value': f'Quant. de Docentes ({idade_selecionada})', 'Ano': 'Ano', 'variable': 'Sexo'}
+        )
+        fig_linha.update_layout(separators=',.')
+        fig_linha.update_yaxes(tickformat=",.0f")
+        fig_linha.update_xaxes(tickformat='d', tickvals=dados_para_plotar.index)
+        
+        c2t.plotly_chart(fig_linha, use_container_width=True)
+    else:
+        c2t.warning("Nenhum dado encontrado para a seleção.")
 
 # --- ABA 3: NÍVEL DE FORMAÇÃO ---
 with tab3:
@@ -333,6 +376,37 @@ with tab3:
     
     with c3.expander("Ver tabela de dados"):
         st.dataframe(df_filtrado)
+
+    # --- Container 2: Gráfico de Linhas (Evolução Temporal) ---
+    st.markdown("---")
+    c3t = st.container(border=True)
+    c3t.markdown("##### Análise da Evolução Temporal por Nível de Formação")
+
+    colunas_formacao = ['Ensino Fundamental', 'Ensino Médio', 'Graduação - Licenciatura', 'Graduação - Sem Licenciatura', 'Especialização', 'Mestrado', 'Doutorado']
+
+    if municipio_selecionado == "Todos os Municípios":
+        dados_temporais = df_formacao.groupby('Ano')[colunas_formacao].sum()
+    else:
+        dados_temporais = df_formacao[df_formacao['Município'] == municipio_selecionado].groupby('Ano')[colunas_formacao].sum()
+        
+    col_filtro, col_vazia = c3t.columns([1, 1])
+    with col_filtro:
+        formacao_selecionada = st.selectbox(
+            "Selecione o Nível de Formação para ver a tendência:",
+            options=colunas_formacao,
+            key="filtro_formacao_linha"
+        )
+        
+    dados_linha = dados_temporais[[formacao_selecionada]]
+
+    if not dados_linha.empty:
+        fig_linha = px.line(dados_linha, markers=True, labels={'value': 'Quant. de Docentes', 'Ano': 'Ano'})
+        fig_linha.update_layout(separators=',.', showlegend=False)
+        fig_linha.update_yaxes(tickformat=",.0f")
+        fig_linha.update_xaxes(tickformat='d', tickvals=dados_temporais.index)
+        c3t.plotly_chart(fig_linha, use_container_width=True)
+    else:
+        c3t.warning("Nenhum dado encontrado para a seleção.")
 
 # --- ABA 4: VÍNCULO FUNCIONAL ---
 with tab4:
@@ -381,6 +455,51 @@ with tab4:
     with c4.expander("Ver tabela de dados"):
         st.dataframe(dados_base)
 
+    # --- Container 2: Gráfico de Linhas (Evolução Temporal) ---
+    st.markdown("---")
+    c4t = st.container(border=True)
+    c4t.markdown("##### Análise Comparativa da Evolução Temporal (Dependências Administrativas), por Vínculo Funcional")
+
+    colunas_dependencia = ['Federal', 'Estadual', 'Municipal']
+
+    # Preparamos os dados base
+    if municipio_selecionado == "Todos os Municípios":
+        dados_base = df_vinculo
+    else:
+        dados_base = df_vinculo[df_vinculo['Município'] == municipio_selecionado]
+
+    # Adicionamos o filtro para o Vínculo Funcional
+    lista_vinculos = dados_base['Vínculo Funcional'].unique().tolist()
+    col_filtro, col_vazia = c4t.columns([2, 3])
+    with col_filtro:
+        vinculo_selecionado = st.selectbox(
+            "Selecione o Vínculo para Análise:",
+            options=lista_vinculos,
+            key="filtro_vinculo_linha_final"
+        )
+
+    # Filtramos primeiro pelo vínculo selecionado
+    dados_filtrados_vinculo = dados_base[dados_base['Vínculo Funcional'] == vinculo_selecionado]
+
+    # Agora, agrupamos por Ano e somamos as colunas de dependência
+    dados_para_plotar = dados_filtrados_vinculo.groupby('Ano')[colunas_dependencia].sum()
+
+    # Gerando o Gráfico
+    if not dados_para_plotar.empty:
+        # O Plotly criará uma linha para cada coluna (Federal, Estadual, Municipal)
+        fig_linha = px.line(
+            dados_para_plotar,
+            markers=True,
+            labels={'value': f'Quant. de Docentes ({vinculo_selecionado})', 'Ano': 'Ano', 'variable': 'Dependência'}
+        )
+        fig_linha.update_layout(separators=',.')
+        fig_linha.update_yaxes(tickformat=",.0f")
+        fig_linha.update_xaxes(tickformat='d', tickvals=dados_para_plotar.index)
+        
+        c4t.plotly_chart(fig_linha, use_container_width=True)
+    else:
+        c4t.warning("Nenhum dado encontrado para a seleção.")
+
     # Mensagem explicativa sobre os dados
     st.info("O mesmo docente pode ser contabilizado mais de uma vez, por atuar com mais de um vínculo.")
 
@@ -427,6 +546,53 @@ with tab5:
     with c5.expander("Ver tabela de dados"):
         st.dataframe(dados_base)
     
+    # --- Container 2: Gráfico de Linhas (Evolução Temporal) ---
+    st.markdown("---")
+    c5t = st.container(border=True)
+    c5t.markdown("##### Análise Comparativa da Evolução Temporal (Urbana vs. Rural), por Dependência Administrativa")
+
+    colunas_dependencia = ['Federal', 'Estadual', 'Municipal', 'Privada']
+
+    # Preparamos os dados base (Estado ou Município)
+    if municipio_selecionado == "Todos os Municípios":
+        dados_base = df_dependencia
+    else:
+        dados_base = df_dependencia[df_dependencia['Município'] == municipio_selecionado]
+
+    # Filtro de dependência administrativa
+    col_filtro, col_vazia = c5t.columns([2, 3])
+    with col_filtro:
+        dependencia_selecionada = st.selectbox(
+            "Selecione a Dependência para Análise:",
+            options=colunas_dependencia,
+            key="filtro_dependencia_linha"
+        )
+
+    # --- PREPARAÇÃO DOS DADOS COM BASE NA DEPENDÊNCIA SELECIONADA ---
+
+    # Selecionando APENAS a coluna da dependência que o usuário escolheu e somamos
+    dados_agrupados = dados_base.groupby(['Ano', 'Localização'])[dependencia_selecionada].sum()
+
+    # 3. Transformando as localizações 'Urbana' e 'Rural' em colunas, com .unstack()
+    dados_para_plotar = dados_agrupados.unstack()
+
+    # --- Gerando o Gráfico ---
+    if dados_para_plotar.empty:
+        c5t.warning("Nenhum dado encontrado para a seleção atual.")
+    else:
+        # O Plotly cria automaticamente uma linha para 'Urbana' e outra para 'Rural'
+        fig_linha = px.line(
+            dados_para_plotar,
+            markers=True,
+            labels={'value': f'Quant. de Docentes (Rede {dependencia_selecionada})', 'Ano': 'Ano', 'variable': 'Localização'}
+        )
+
+        fig_linha.update_layout(separators=',.')
+        fig_linha.update_yaxes(tickformat=",.0f")
+        fig_linha.update_xaxes(tickformat='d', tickvals=dados_para_plotar.index)
+        
+        c5t.plotly_chart(fig_linha, use_container_width=True)
+
     # Mensagem explicativa sobre os dados
     st.info("O mesmo docente pode ser contabilizado mais de uma vez, por atuar em mais de uma localização e/ou dependência administrativa.")
 
